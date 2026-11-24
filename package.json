@@ -1,0 +1,19 @@
+{
+  "name": "noir",
+  "version": "0.1.0",
+  "description": "NOIR: a private layer 2 on Robinhood Chain. Its own blocks, private balances, payments, trades and launches, with every block sealed to Robinhood Chain.",
+  "type": "module",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/start.js",
+    "test": "node test/run.js",
+    "test:contracts": "cd contracts && forge test"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "viem": "2.21.0"
+  }
+}
