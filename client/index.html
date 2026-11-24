@@ -11,7 +11,7 @@
 <meta property="og:image" content="/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.svg">
-<link rel="stylesheet" href="/style.css?v=4">
+<link rel="stylesheet" href="/style.css?v=5">
 </head>
 <body>
 <canvas id="sky"></canvas><canvas id="fx"></canvas>
@@ -66,12 +66,14 @@
     <div id="caBox"></div>
     <div class="row"><a class="btn primary" href="/app">Enter NOIR</a><span id="buyBox"></span></div>
   </div></section>
+
+  <section class="faq" id="faq"></section>
 </main>
-<footer><span>NOIR. A private layer 2 on Robinhood Chain.</span><nav><a href="/explorer">Explorer</a><a href="/docs">Docs</a><a href="/whitepaper">Whitepaper</a><a href="/developers">Developers</a></nav></footer>
-<script src="/brand.js?v=4"></script><script src="/common.js?v=4"></script><script src="/scene.js?v=4"></script>
+<footer><span>NOIR. A private layer 2 on Robinhood Chain.</span><nav><a href="/explorer">Explorer</a><a href="/docs">Docs</a><a href="/whitepaper">Whitepaper</a><a href="/developers">Developers</a><a href="#faq">FAQ</a></nav></footer>
+<script src="/brand.js?v=5"></script><script src="/common.js?v=5"></script><script src="/scene.js?v=4"></script>
 <script>
 (() => {
-  const { $, $$, api, int, short, B, nav, onBlock, esc } = L2, { smooth, lerp } = L2Scene; nav();
+  const { $, $$, api, int, short, B, nav, onBlock, esc } = L2, { smooth, lerp } = L2Scene; nav(); L2.faq($('#faq'));
   const acts = $$('.act'), chapters = $$('#chapters a'), K = [
     { cover: 0, ring: 0, seal: 0, dim: 0, x: .7, y: .38, r: .17 },
     { cover: 1, ring: 0, seal: 0, dim: 0, x: .3, y: .46, r: .24 },
